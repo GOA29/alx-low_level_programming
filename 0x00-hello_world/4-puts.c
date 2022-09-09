@@ -1,11 +1,14 @@
-i#include <stdio.h>
+#include <stdio.h>
+
 /**
- *main- Serves as the entry point for the program
- *Return: By default returns zero if no erros otherwise returns non-zero value
- */
+* main - prints out a string via puts
+* Description: Program that prints out the string s followed by a new line
+* Return: int 0 when done and no errors
+*/
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
-} 
+ } 
 
