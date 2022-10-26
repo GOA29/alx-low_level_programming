@@ -6,6 +6,7 @@
  *
  * Return: no return.
  */
+
 void free_listp2(listp_t **head)
 {
 	listp_t *temp;
@@ -29,6 +30,7 @@ void free_listp2(listp_t **head)
  *
  * Return: size of the list that was freed.
  */
+
 size_t free_listint_safe(listint_t **h)
 {
 	size_t nnodes = 0;
@@ -53,13 +55,13 @@ size_t free_listint_safe(listint_t **h)
 		{
 			add = add->next;
 			if (*h == add->p)
+
 			{
 				*h = NULL;
 				free_listp2(&hptr);
 				return (nnodes);
 			}
 		}
-
 		curr = *h;
 		*h = (*h)->next;
 		free(curr);
@@ -69,4 +71,3 @@ size_t free_listint_safe(listint_t **h)
 	*h = NULL;
 	free_listp2(&hptr);
 	return (nnodes);
-}
